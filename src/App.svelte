@@ -1,7 +1,10 @@
 <script>
   import { onMount } from "svelte";
   import Soundboard from "./Soundboard.svelte";
+  import SoundSearch from "./SoundSearch.svelte";
   export let name;
+
+  let searchTerm = "";
   let sounds = [];
   let displayList = [];
 
@@ -10,38 +13,46 @@
     sounds = await res.json();
     displayList = sounds.files;
   });
+
+  function filterList(list, query) {
+    displayList = sounds.files;
+    return displayList.filter(item => {
+      return (
+        item.name.toLowerCase().match(query.toLowerCase()) ||
+        item.artist.toLowerCase().match(query.toLowerCase())
+      );
+    });
+  }
 </script>
 
 <style>
   main {
     text-align: center;
     padding: 1em;
-    max-width: 240px;
     margin: 0 auto;
   }
-
   h1 {
-    color: #ff3e00;
+    color: rgb(1, 1, 59);
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 100;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+    text-align: center;
   }
 </style>
 
 <svelte:head>
-  <title>Soundboard</title>
+  <title>{name}</title>
 </svelte:head>
-
+<header>
+  <h1>{name}</h1>
+</header>
 <main>
-  <section class="container">
-
+  <section>
+    <SoundSearch
+      bind:searchTerm
+      on:updateSearch={() => {
+        displayList = filterList(sounds, searchTerm);
+      }} />
     <Soundboard bind:sounds={displayList} />
-
   </section>
 </main>
