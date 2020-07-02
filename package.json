@@ -8,8 +8,8 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^13.0.0",
-    "@rollup/plugin-node-resolve": "^8.0.0",
-    "rollup": "^2.3.4",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "rollup": "^2.18.2",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.2.3",
     "rollup-plugin-terser": "^5.1.2",
