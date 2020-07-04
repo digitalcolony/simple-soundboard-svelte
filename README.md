@@ -1,4 +1,4 @@
-<p>
+<p style="text-align:center;">
 <img src="https://michaelallensmith.com/images/svelte-soundboard.jpg" alt="Simple Soundboard - Svelte Edition"/>
 </p>
 
