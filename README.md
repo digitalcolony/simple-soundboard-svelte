@@ -1,10 +1,10 @@
-# Simple Soundboard - Svelte Edition
+![Svelte Simple Soundboard](/public/svelte-soundboard.jpg)
+
+# 🔊 Simple Soundboard - Svelte Edition
 
 This repo is a Svelte rewrite of my [Simple Soundboard](https://github.com/digitalcolony/Simple-Soundboard), which uses jQuery.
 
-![Svelte Simple Soundboard](/public/svelte-soundboard.jpg)
-
-## Add Sounds and Setup a JSON file
+## 🎼 Add Sounds and Setup a JSON file
 
 Add the sound files you wish to have on your soundboard in the /public/sounds/ folder. Then create a JSON file to describe those files.
 
@@ -27,6 +27,6 @@ Add the sound files you wish to have on your soundboard in the /public/sounds/ f
   ]
 ```
 
-## Build and Deploy
+## 🔨 Build and Deploy
 
 Visit the [Svelte website](https://svelte.dev/) to learn how to setup, build, and deploy a Svelte website.
