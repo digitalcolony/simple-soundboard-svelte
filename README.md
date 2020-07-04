@@ -7,16 +7,20 @@ This repo is a Svelte rewrite of my [Simple Soundboard](https://github.com/digit
 Add the sound files you wish to have on your soundboard in the /public/sounds/ folder. Then create a JSON file to describe those files.
 
 ```json
-  "files": [
-    {
-      "name": "1 to 12 hour",
-      "artist": "Boca Britany Somers",
-      "mp3": "/sounds/1-to-12-hour.mp3"
+   {
+      "name": "A Stench of Cow Manure...",
+      "artist": "Jim Mandich",
+      "mp3": "/sounds/A-Stench-of-Cow-Manure.mp3"
     },
     {
-      "name": "2 of the Dumbest White Men",
-      "artist": "Mike Reineri",
-      "mp3": "/sounds/2-of-the-Dumbest-White-Men.mp3"
+      "name": "Absolutely Correct Sir",
+      "artist": "Neil Rogers/Old Bridge Dude",
+      "mp3": "/sounds/Absolutely-Correct-Sir.mp3"
+    },
+    {
+      "name": "Anybody have a heart or a liver",
+      "artist": "Jennifer Rehm",
+      "mp3": "/sounds/Anybody-have-a-heart-or-a-liver.mp3"
     }
   ]
 ```
