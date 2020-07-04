@@ -1,4 +1,4 @@
-![Svelte Simple Soundboard](/public/svelte-soundboard.jpg)
+![Svelte Simple Soundboard](svelte-soundboard.jpg)
 
 # 🔊 Simple Soundboard - Svelte Edition
 
