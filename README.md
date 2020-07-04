@@ -1,5 +1,5 @@
 <p>
-<img src="svelte-soundboard.jpg" alt="Simple Soundboard - Svelte Edition"/>
+<img src="https://michaelallensmith.com/images/svelte-soundboard.jpg" alt="Simple Soundboard - Svelte Edition"/>
 </p>
 
 # 🔊 Simple Soundboard - Svelte Edition
